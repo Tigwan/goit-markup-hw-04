@@ -1,0 +1,375 @@
+html {
+  box-sizing: border-box;
+}
+
+ *, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+:root {
+  --color-text: #434455;
+  --color-primary-brand: #4D5AE5;
+  --color-dark: #2E2F42;
+  --color-white: #ffffff;
+  --color-light: #F4F4FD;
+  --color-accent: #E7E9FC;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* HEADER */
+.page-header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.menu-nav {
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.menu-nav .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu-nav .link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  text-decoration: none;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.auth-nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item+.item {
+  margin-left: 40px;
+} 
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 77px;
+  /* border: 1px solid teal; */
+  text-align: center;
+  padding-top: 24px;
+}
+
+/* ----------------------------------------------------- */
+ul {
+  list-style-type: none;
+}
+
+.feature-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.feature-item {
+  width: 254px;
+}
+/* -------------------------------------------------- */
+.doing {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.colleagues {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+}
+
+.colleagues-title {
+  margin-bottom: 8px;
+}
+
+.colleagues-text {
+  padding: 32px 16px;
+}
+
+.term {
+  background-color: var(--color-white);
+}
+/* -------------------------------------------- */
+.link:hover,
+.link:focus {
+  color: var(--color-text);
+}
+
+.link:active {
+  color: var(--color-primary-brand);
+}
+
+.iris {
+  color: var(--color-primary-brand);
+}
+
+.navy-blue {
+  color: var(--color-dark);
+}
+
+.contacts {
+  display: flex;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background-color: var(--color-dark);
+  text-align: center;
+  padding-top: 192px;
+  padding-bottom: 192px;
+}
+
+.text-hero {
+  max-width: 496px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  margin-bottom: 48px;
+}
+
+.advantages {
+  padding-top: 120px;
+}
+
+.services {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.button {
+  background-color: var(--color-light);
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-primary-brand);
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--color-primary-brand);
+  color: var(--color-white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 4px;
+}
+
+.button-service {
+  background-color: var(--color-primary-brand);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 16px 32px;
+  gap: 10px;
+}
+
+.button-service:hover,
+.button-service:focus {
+  background-color: var(--color-primary-brand);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 4px;
+}
+
+.button-service:active {
+  background-color: #404BBF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  color: var(--color-dark);
+  margin-bottom: 72px;
+}
+
+.team {
+  background-color: var(--color-light);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.foot {
+  background-color: var(--color-dark);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.foot-logo {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--color-light);
+}
+
+.foot-text {
+  color: var(--color-accent);
+  margin-top: 16px;
+}
+
+.logo-daun {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.coda {
+  width: 264px;
+}
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
+.control:not(:last-child) {
+  margin-right: 24px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.gallery-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.gallery-card {
+  background-color: var(--color-white);
+  border-bottom: 0.5px solid #F4F4FD;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
