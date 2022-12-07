@@ -185,9 +185,15 @@ ul {
 /* HERO */
 .hero {
   background-color: var(--color-dark);
+  background-image: linear-gradient(to right, 
+  rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+  url(../images/img17.jpg);
   text-align: center;
   padding-top: 192px;
   padding-bottom: 192px;
+  height: 600px;
+  /* outline: 1px solid red; */
+  max-width: 1400px;
 }
 
 .text-hero {
