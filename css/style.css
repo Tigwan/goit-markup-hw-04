@@ -23,6 +23,8 @@ p {
   --color-white: #ffffff;
   --color-light: #F4F4FD;
   --color-accent: #E7E9FC;
+  --light-slate: #8E8F99;
+  --color-green: #31D0AA;
 }
 
 body {
@@ -194,6 +196,12 @@ display: flex;
 .social-icon {
   width: 40px;
   height: 40px;
+  fill: var(--color-primary-brand);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--color-green);
 }
 
 .colleagues-title {
@@ -206,6 +214,10 @@ display: flex;
 
 .term {
   background-color: var(--color-white);
+}
+
+.guests {
+  padding: 120px 185px 120px 127px;
 }
 
 .container-customers {
@@ -221,8 +233,20 @@ display: flex;
   justify-content: space-between;
   padding: 0;
   margin: 0;
+}
 
-  text-align: center;
+.customers-card {
+  width: 168px;
+  height: 88px;
+  margin-right: 24px;
+  padding: 0;
+  fill: var(--light-slate);
+}
+
+.customers-card:hover,
+.customers-card:focus {
+fill: var(--color-primary-brand);
+border-color: var(--color-primary-brand);
 }
 /* -------------------------------------------- */
 .link:hover,
@@ -368,10 +392,45 @@ display: flex;
   padding-bottom: 120px;
 }
 
+/* footer */
+
 .foot {
   background-color: var(--color-dark);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.foot-content {
+  display: flex;
+}
+
+.social-media {
+  width: 208px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.media-title{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+    margin-bottom: 16px;
+}
+
+.media-icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--color-white);
+}
+
+.media-icon:hover,
+.media-icon:focus {
+  background-color: var(--color-green);
+  border-radius: 25px;
 }
 
 .foot-logo {
@@ -402,7 +461,10 @@ display: flex;
 
 .coda {
   width: 264px;
+  margin-right: 120px;
 }
+
+/* Portfolio */
 
 .portfolio {
   padding-top: 96px;
