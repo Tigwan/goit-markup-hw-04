@@ -116,7 +116,7 @@ img {
   padding-top: 24px;
 }
 
-/* ----------------------------------------------------- */
+/* feature */
 ul {
   list-style-type: none;
 }
@@ -144,7 +144,9 @@ display: flex;
 }
 
 .feature-cloud {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 264px;
   height: 112px;
   background-color: var(--color-light);
@@ -152,7 +154,6 @@ display: flex;
   border: none;
   padding: 0;
 }
-/* section-advantages */
 
 /* -------------------------------------------------- */
 .doing {
@@ -180,28 +181,29 @@ display: flex;
   padding: 4px 0px;
   margin: 0;
   list-style: none;
-  justify-content: space-around;
   align-items: center;
-}
-
-.point {
-  height: 40px;
+  justify-content: center;
+  gap: 24px;
 }
 
 .social-link {
-  padding: 0;
+  padding: 12px;
   border: none;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary-brand);
+  border-radius: 25px;
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
-  fill: var(--color-primary-brand);
+width: 16px;
+height: 16px;
+fill: var(--color-white);
 }
 
-.social-icon:hover,
-.social-icon:focus {
-  fill: var(--color-green);
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-green);
 }
 
 .colleagues-title {
@@ -214,10 +216,12 @@ display: flex;
 
 .term {
   background-color: var(--color-white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .guests {
-  padding: 120px 185px 120px 127px;
+  padding: 120px 0;
 }
 
 .container-customers {
@@ -230,15 +234,19 @@ display: flex;
 
 .customers {
   display: flex;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
+  gap: 24px;
 }
 
 .customers-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
   width: 168px;
   height: 88px;
-  margin-right: 24px;
   padding: 0;
   fill: var(--light-slate);
 }
@@ -251,7 +259,7 @@ border-color: var(--color-primary-brand);
 /* -------------------------------------------- */
 .link:hover,
 .link:focus {
-  color: var(--color-text);
+  color: var(--color-primary-brand);
 }
 
 .link:active {
@@ -272,17 +280,21 @@ border-color: var(--color-primary-brand);
   text-decoration: none;
 }
 
+.contacts:hover,
+.contacts:focus {
+  color: var(--color-primary-brand);
+}
+
 /* HERO */
 .hero {
   background-color: var(--color-dark);
   background-image: linear-gradient(to right, 
-  rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
-  url(../images/img17.jpg);
+  rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img17.jpg);
   text-align: center;
   padding-top: 192px;
   padding-bottom: 192px;
   height: 600px;
-  /* outline: 1px solid red; */
+  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -330,14 +342,17 @@ border-color: var(--color-primary-brand);
   color: var(--color-primary-brand);
   cursor: pointer;
   padding: 8px 16px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--color-primary-brand);
+  border: 1px solid transparent;
   color: var(--color-white);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .button-service {
@@ -421,16 +436,25 @@ border-color: var(--color-primary-brand);
     margin-bottom: 16px;
 }
 
-.media-icon {
+
+.media-item {
+  padding: 8px;
+  border: none;
   width: 40px;
   height: 40px;
+  background-color: var(--color-text);
+  border-radius: 25px;
+}
+
+.media-icon {
+  width: 24px;
+  height: 24px;
   fill: var(--color-white);
 }
 
-.media-icon:hover,
-.media-icon:focus {
+.media-item:hover,
+.media-item:focus {
   background-color: var(--color-green);
-  border-radius: 25px;
 }
 
 .foot-logo {
@@ -504,6 +528,11 @@ border-color: var(--color-primary-brand);
 
 .gallery-card {
   background-color: var(--color-white);
-  border-bottom: 0.5px solid #F4F4FD;
+  border-bottom: 0.5px solid var(--color-light);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.gallery-card:hover,
+.gallery-card:focus {
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
